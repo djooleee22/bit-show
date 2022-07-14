@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: rgb(65, 65, 65);
+  font-family: "Oswald", sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: rgb(65, 65, 65);
+  justify-content: space-between;
+  padding: 10px 200px;
+  color: white;
+  align-items: center;
+}
+
+nav input {
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(65, 65, 65);
+}
+
+nav button {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid rgb(65, 65, 65);
+  background-color: rgb(255, 177, 82);
+}
+
+.back-btn {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.856);
+  display: block;
+  width: 200px;
+  margin: 50px auto;
+  font-size: 22px;
+  background-color: rgb(255, 177, 82);
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  box-shadow: 3px 3px 8px 2px #0000007e;
+  transition: all .4s;
+}
+
+.back-btn:hover {
+  color: rgb(83, 83, 83);
+  transform: scale(1.02);
+}
+
+main {
+  padding: 0 200px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: rgb(65, 65, 65);
+  padding: 10px 200px;
+  text-align: center;
+  color: white;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+
+}
+
+li {
+    padding-left: 15px;
+}
+
+.seasons {
+    margin-bottom: 15px;
+}
+
+.cast {
+    margin: 15px 0;
+}
+.details-img {
+    width: 50%;
+    align-self: stretch;
+    box-shadow: 5px 5px 10px 2px #0000007e;
+}
+
+.title {
+    text-align: center;
+    margin: 25px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.results-box {
+    position: absolute;
+    color: rgb(65, 65, 65);
+    top: 40px;
+    left: 0;
+    list-style: none;
+    border: 1px solid grey;
+    width: 175px;
+    background-color: white;
+    padding: 10px;
+}
+
+.details-li:not(:last-child) {
+    margin-bottom: 10px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.details-li:hover {
+    font-weight: 600;
+}
+
+.show-details {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 900px){
+    .box {
+        text-align: center;
+        display: block;
+    }
+
+    .seasons-list, .cast-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 100px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .heading {
+        display: none;
+    }
+
+    .back-btn {
+        font-size: 18px;
+        width: 150px;
+        padding: 5px 15px;
+    }
+
+    .search-box {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    
+    .seasons-list, .cast-list {
+        padding-left: 70px;
+    }
+}
