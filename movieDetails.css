@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -48,7 +48,7 @@ nav button {
   padding: 10px 15px;
   text-align: center;
   box-shadow: 3px 3px 8px 2px #0000007e;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .back-btn:hover {
@@ -76,100 +76,120 @@ footer {
 }
 
 ul {
-    list-style-position: inside;
+  list-style-position: inside;
 }
 
 li:not(:last-child) {
-    margin-bottom: 10px;
-
+  margin-bottom: 10px;
 }
 
 li {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 .seasons {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .cast {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 .details-img {
-    width: 50%;
-    align-self: stretch;
-    box-shadow: 5px 5px 10px 2px #0000007e;
+  width: 50%;
+  align-self: stretch;
+  box-shadow: 5px 5px 10px 2px #0000007e;
 }
 
 .title {
-    text-align: center;
-    margin: 25px;
+  text-align: center;
+  margin: 25px;
 }
 
 .search-box {
-    position: relative;
+  position: relative;
 }
 
 .results-box {
-    position: absolute;
-    color: rgb(65, 65, 65);
-    top: 40px;
-    left: 0;
-    list-style: none;
-    border: 1px solid grey;
-    width: 175px;
-    background-color: white;
-    padding: 10px;
+  position: absolute;
+  color: rgb(65, 65, 65);
+  top: 40px;
+  left: 0;
+  list-style: none;
+  border: 1px solid grey;
+  width: 175px;
+  background-color: white;
+  padding: 10px;
 }
 
 .details-li:not(:last-child) {
-    margin-bottom: 10px;
-    border-bottom: 1px solid grey;
-    padding-bottom: 2px;
-    cursor: pointer;
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 2px;
+  cursor: pointer;
 }
 
 .details-li:hover {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .show-details {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-@media screen and (max-width: 900px){
-    .box {
-        text-align: center;
-        display: block;
-    }
+@media screen and (max-width: 900px) {
+  .box {
+    text-align: center;
+    display: block;
+  }
 
-    .seasons-list, .cast-list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 100px;
-    }
-
+  .seasons-list,
+  .cast-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 100px;
+  }
 }
 
 @media screen and (max-width: 750px) {
-    .heading {
-        display: none;
-    }
-
-    .back-btn {
-        font-size: 18px;
-        width: 150px;
-        padding: 5px 15px;
-    }
-
-    .search-box {
-        max-width: 250px;
-        margin: 0 auto;
-    }
-
-    
-    .seasons-list, .cast-list {
-        padding-left: 70px;
-    }
+  main {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .title {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .box {
+    width: 100%;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  .seasons-list,
+  .cast-list {
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    padding: 0;
+    margin: 0 0 5px 0;
+  }
+  p {
+    font-size: 14px;
+  }
+  .back-btn {
+    font-size: 18px;
+    padding: 8px 14px;
+  }
 }
