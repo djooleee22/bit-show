@@ -1,154 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-    min-height: 100vh;
-    color: rgb(65, 65, 65);
-    font-family: "Oswald", sans-serif;
+  min-height: 100vh;
+  color: rgb(65, 65, 65);
+  font-family: "Oswald", sans-serif;
 }
-
 nav {
-    display: flex;
-    background-color: rgb(65, 65, 65);
-    justify-content: space-between;
-    padding: 10px 200px;
-    color: white;
-    align-items: center;
+  display: flex;
+  background-color: rgb(65, 65, 65);
+  justify-content: space-between;
+  padding: 10px 200px;
+  color: white;
+  align-items: center;
 }
-
 nav input {
-    padding: 5px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgb(65, 65, 65);
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(65, 65, 65);
 }
-
 nav button {
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 1px solid rgb(65, 65, 65);
-    background-color: rgb(255, 177, 82);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid rgb(65, 65, 65);
+  background-color: rgb(255, 177, 82);
 }
-
 main {
-    padding: 0 200px;
-    padding-bottom: 50px;
-    background-color: rgba(255, 177, 82, 0.356);
+  padding: 0 200px;
+  padding-bottom: 50px;
+  background-color: rgba(255, 177, 82, 0.356);
 }
-
 main h2 {
-    text-align: center;
-    color: rgb(65, 65, 65);
-    padding-top: 35px;
-    margin-bottom: 35px;
-    font-size: 40px;
+  text-align: center;
+  color: rgb(65, 65, 65);
+  padding-top: 35px;
+  margin-bottom: 35px;
+  font-size: 40px;
 }
-
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    margin: 0 auto;
-    justify-items: center;
-    gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin: 0 auto;
+  justify-items: center;
+  gap: 50px;
 }
-
 .show-box {
-    /* border: 1px solid rgba(128, 128, 128); */
-    cursor: pointer;
-    transition: all 0.5s;
-    box-shadow: 5px 5px 10px 2px #0000007e;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 5px 5px 10px 2px #0000007e;
 }
-
 .show-box:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .title {
-    padding: 20px 8px;
-    font-size: 18px;
-    color: blue;
+  padding: 20px 8px;
+  font-size: 18px;
+  color: blue;
 }
-
 .search-box {
-    position: relative;
+  position: relative;
 }
-
 .results-box {
-    position: absolute;
-    color: rgb(65, 65, 65);
-    top: 40px;
-    left: 0;
+  position: absolute;
+  color: rgb(65, 65, 65);
+  top: 40px;
+  left: 0;
 }
-
 ul {
-    list-style: none;
-    border: 1px solid grey;
-    width: 175px;
-    background-color: white;
-    padding: 10px;
+  list-style: none;
+  border: 1px solid grey;
+  width: 175px;
+  background-color: white;
+  padding: 10px;
 }
-
-
 li:not(:last-child) {
-    margin-bottom: 10px;
-    border-bottom: 1px solid grey;
-    padding-bottom: 2px;
-    cursor: pointer;
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 2px;
+  cursor: pointer;
 }
-
 li:hover {
-    font-weight: 600;
+  font-weight: 600;
 }
-
 footer {
-    background-color: rgb(65, 65, 65);
-    padding: 10px 200px;
-    text-align: center;
-    color: white;
+  background-color: rgb(65, 65, 65);
+  padding: 10px 200px;
+  text-align: center;
+  color: white;
 }
-@media screen and (max-width: 1200px){
-    .grid {
-        gap: 20px;
-    }
-    
+@media screen and (max-width: 1200px) {
+  .grid {
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    main {
-        padding: 0 120px;
-    }
+  main {
+    padding: 0 120px;
+  }
 }
-
-@media  screen and (max-width: 800px) {
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .show-box {
-        width: 70%;
-    }
-
-    .show-image{
-        width: 100%;
-    }
-    
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .show-box {
+    width: 70%;
+  }
+  .show-image {
+    width: 100%;
+  }
 }
-
 @media screen and (max-width: 700px) {
-    .heading {
-        display: none;
+  .heading {
+    display: none;
+  }
+  nav {
+    padding: 10px;
+    justify-content: center;
+  }
+  nav input,
+  nav button {
+    padding: 4px;
+  }
+  nav input {
+    width: 160px;
+  }
+  @media screen and (max-width: 550px) {
+    main h2 {
+      font-size: 34px;
     }
+    .show-box {
+      width: 85%;
+    }
+  }
 }
-
