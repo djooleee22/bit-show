@@ -206,9 +206,12 @@ li {
     font-size: 18px;
     padding: 8px 14px;
   }
-  @media screen and (max-width: 415px) {
-    main {
-      width: 65%;
-    }
+  footer {
+    padding: 10px 50px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main {
+    width: 65%;
   }
 }
