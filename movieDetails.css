@@ -161,6 +161,20 @@ li {
     justify-content: center;
     padding: 10px 0;
   }
+  nav .heading {
+    display: none;
+  }
+  nav {
+    padding: 10px;
+    justify-content: center;
+  }
+  nav input,
+  nav button {
+    padding: 4px;
+  }
+  nav input {
+    width: 160px;
+  }
   .title {
     width: 100%;
     margin: 15px auto;
