@@ -32,9 +32,10 @@ nav button {
   background-color: rgb(255, 177, 82);
 }
 main {
-  padding: 0 200px;
+  padding: 0 200px 20px 200px;
   padding-bottom: 50px;
   background-color: rgba(255, 177, 82, 0.356);
+  width: 100vw;
 }
 main h2 {
   text-align: center;
@@ -107,7 +108,7 @@ footer {
   }
 
   main {
-    padding: 0 120px;
+    padding: 0 120px 20px 120px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -143,6 +144,9 @@ footer {
     }
     .show-box {
       width: 85%;
+    }
+    footer {
+      padding: 10px 50px;
     }
   }
 }
