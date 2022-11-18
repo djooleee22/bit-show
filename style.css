@@ -32,7 +32,7 @@ nav button {
   background-color: rgb(255, 177, 82);
 }
 main {
-  padding: 0 200px 20px 200px;
+  padding: 0 150px 20px 150px;
   padding-bottom: 50px;
   background-color: rgba(255, 177, 82, 0.356);
   width: 100vw;
@@ -54,11 +54,15 @@ main h2 {
 }
 .show-box {
   cursor: pointer;
+  width: 75%;
   transition: all 0.5s;
   box-shadow: 5px 5px 10px 2px #0000007e;
 }
 .show-box:hover {
   transform: scale(1.1);
+}
+.show-image {
+  width: 100%;
 }
 .title {
   padding: 20px 8px;
@@ -98,7 +102,7 @@ footer {
 }
 @media screen and (max-width: 1200px) {
   .grid {
-    gap: 20px;
+    gap: 40px;
   }
 }
 
@@ -117,10 +121,7 @@ footer {
     gap: 35px;
   }
   .show-box {
-    width: 70%;
-  }
-  .show-image {
-    width: 100%;
+    width: 65%;
   }
 }
 @media screen and (max-width: 700px) {
